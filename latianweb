@@ -1,0 +1,239 @@
+1.	Beranda HTML
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Tugas Pemrograman Web 2</title>
+	<link rel="stylesheet" type="text/css" href="cssnya.css"> 
+</head>
+<body>
+	<header>
+		<div class="main">
+			<div class="logo"><img src="logoupnbaru.png"></div>
+			<ul>
+				<li class="active"><a href="home"> Home</a></li>
+				<li><a href="pendidikan"> Pendidikan </a></li>
+				<li><a href="jadwal"> Jadwal Kuliah </a></li>
+				<li><a href="aktiv"> Aktivitas </a></li>
+				<li><a href="lainnya"> Lain - Lain </a></li>
+			</ul>
+		</div>
+		<div class="title">
+			<h1>Tugas 2 Pemrograman Web</h1>
+		</div>
+	</header>
+
+</body>
+</html>
+2.	Beranda CSS 
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+header {
+	background-image: url("wall.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+ul {
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: white;
+	padding : 5px 20px;
+	border: 1px solid;
+	transition: 0.6s;
+	margin-top: 10px;
+}
+ul li a:hover{
+	background-color: white;
+	color: black;
+}
+ul li.active a{
+	background-color: white;
+	color: black; 
+
+}
+.logo img{
+	float: left;
+	width: 180px;
+	height: auto;
+}
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+.title{
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	transform: translate(-50%;-50%);
+}
+.title h1 {
+	font-family: sans-serif;
+	color: white;
+	font-size: 50px;
+
+}
+
+3.	Pendidikan HTML
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Pengaturan Table spec </title>
+	<link rel="stylesheet" type="text/css" href="pnd.css">
+	<style type="text/css">
+		body {background-color: pink;}
+		h1 {background : pink;}
+		h2 {background-color: transparent;}
+	</style>
+</head>
+<body>
+	<table width="468" border="0" cellpadding="5" cellspacing="0">
+		<tr>
+			<th width="80"> Nomor </th>
+			<th width="91"> Tahun </th>
+			<th width="96"> Jenjang </th>
+		</tr>
+		<tr>
+			<td> 1 </td>
+			<td> 2005-2007 </td>
+			<td> TK Maarif Sepanjang </td>
+		</tr>
+		<tr>
+			<td> 2 </td>
+			<td> 2007-2013 </td>
+			<td> MI Maarif Babatan Jati </td>
+		</tr>
+		<tr>
+			<td> 3 </td>
+			<td> 2013-2015 </td>
+			<td> MTs. Amanatul Ummah Pacet </td>
+		</tr>
+		<tr>
+			<td> 4 </td>
+			<td> 2015-2018 </td>
+			<td> SMA Wachid Hasyim 2 Taman </td>
+		</tr>
+	</table>
+</body>
+</html>
+
+4.	Pendidikan CSS
+/* CCS Document */
+TH {
+	color : white; background-color: #336699; border-width: 1px; border-style: solid;
+	border-color: red; font-size: 12pt;
+}
+TD {
+	color: black;
+	background-color: #e6e6fa; border-width: 1px;
+	border-style: solid; border-color: blue; font-size: 12pt;
+}
+
+5.	Jadwal kuliah HTML
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Pengaturan Table spec </title>
+	<link rel="stylesheet" type="text/css" href="pnd.css">
+	<style type="text/css">
+		body {background-color: #E9967A;}
+		h1 {background : pink;}
+		h2 {background-color: transparent;}
+	</style>
+</head>
+<body>
+	<table width="468" border="0" cellpadding="5" cellspacing="0">
+		<tr>
+			<th width="80"> Nomor </th>
+			<th width="91"> Hari </th>
+			<th width="96"> Mata Kuliah </th>
+		</tr>
+		<tr>
+			<td> 1 </td>
+			<td> Senin </td>
+			<td> Pemrograman Dekstop dan Bahasa Indonesia </td>
+		</tr>
+		<tr>
+			<td> 2 </td>
+			<td> Selasa </td>
+			<td> Kewirausahaan </td>
+		</tr>
+		<tr>
+			<td> 3 </td>
+			<td> Rabu </td>
+			<td> Pemrograman Web, Analisis Data Terstruktur dan Administrasi Basis Data</td>
+		</tr>
+		<tr>
+			<td> 4 </td>
+			<td> Kamis </td>
+			<td> Matematika Komputasi dan Kepemimpinan </td>
+		</tr>
+	</table>
+</body>
+</html>
+
+6.	Jadwal Kuliah CSS
+/* CCS Document */
+TH {
+	color : white; background-color: #696969; border-width: 1px; border-style: solid;
+	border-color: #696969; font-size: 12pt;
+}
+TD {
+	color: black;
+	background-color: #e6e6fa; border-width: 1px;
+	border-style: solid; border-color: blue; font-size: 12pt;
+}
+
+7.	Aktivitas HTML
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Pengaturan Table spec </title>
+	<link rel="stylesheet" type="text/css" href="Aktivitas.css">
+	<style type="text/css">
+		body {background-color: #E9967A;}
+		h1 {background : pink;}
+		h2 {background-color: transparent;}
+	</style>
+</head>
+<body>
+	<table width="468" border="0" cellpadding="5" cellspacing="0">
+		<tr>
+			<th width="80"> Nomor </th>
+			<th width="91"> Aktivitas </th>
+		</tr>
+		<tr>
+			<td> 1 </td>
+			<td> Karang Taruna </td>
+		</tr>
+		<tr>
+			<td> 2 </td>
+			<td> Remaja Masjid </td>
+		</tr>
+		<tr>
+			<td> 3 </td>
+			<td> Himpunan Mahasiswa Sistem Informasi </td>
+		</tr>
+	</table>
+</body>
+</html>
+8.	Aktivitas CSS
+/* CCS Document */
+TH {
+	color : white; background-color: #696969; border-width: 1px; border-style: solid;
+	border-color: #696969; font-size: 12pt;
+}
+TD {
+	color: black;
+	background-color: #e6e6fa; border-width: 1px;
+	border-style: solid; border-color: blue; font-size: 12pt;
+}
