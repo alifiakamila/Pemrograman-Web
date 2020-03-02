@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$(".sembunyi").click(function(){ $("#gambar").hide("slow")});
+		$(".tampil").click(function(){ $("#gambar").show("slow")});
+
+		$(".sembunyikan").click(function(){ $("#foto").hide("slow")});
+		$(".tampilkan").click(function(){ $("#foto").show("slow")});
+
+		$(".sembunyiin").click(function(){ $("#gam").hide("slow")});
+		$(".tampilin").click(function(){ $("#gam").show("slow")});
+		});
+		
+	</script>
+</head>
+
+<body>
+<button class="sembunyi">hide</button>
+<button class="tampil">show</button>
+<p><img id="gambar" src="iu.png"></p>
+
+<button class="sembunyikan">hide</button>
+<button class="tampilkan">show</button>
+<p><img id="foto" src="iu2.png"></p>
+
+<button class="sembunyiin">hide</button>
+<button class="tampilin">show</button>
+<p><img id="gam" src="iu3.png"></p>
+</body>
+</html>
